@@ -138,8 +138,8 @@ export default function CarrouselSkin({ Champion }) {
           </div>
         </div>
       ) : (
-        <div className="h-screen w-full  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-max gap-6 mx-40">
-          <div className=" w-72 h-72 shadow-2xl aspect-square rounded-md mt-24 ">
+        <div className=" w-full flex flex-wrap items-center justify-around gap-6  ">
+        <div className=" w-72 h-72 shadow-2xl aspect-square rounded-md mt-24 ">
             <Image
               alt={Champion.skinks.skin1.name}
               width={400}

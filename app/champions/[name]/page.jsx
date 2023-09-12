@@ -25,11 +25,12 @@ export default async function Champions({ params }) {
   const backgroundImageStyle = {
     backgroundImage: `url(${championFiltrado.img})`,
     backdropFilter: "blur(100%)", // Aqui adicionamos o desfoque com backdrop-filter
-    backgroundPosition : "center"
+    backgroundPosition : 'right 55% bottom 75%',
+    
   };
 
   return (
-    <div className="h-screen w-[100%]  bg-zinc-900">
+    <div className={`h-screen w-[100%]  bg-zinc-900`}>
       <div
         className={`bg-cover object-cover opacity-20  blur-md h-screen w-screen   absolute`}
         style={backgroundImageStyle}
@@ -66,7 +67,7 @@ export default async function Champions({ params }) {
 
           <div className="flex flex-wrap justify-center items-center h-[500px] sm:h-[100%] md:h-[100%] sm:w-[45%] md:w-[51%]  px-4  sm:px-4 xl:px-24          sm:border-l-[2px] sm:border-white ">
             
-            <h1 className="text-justify text-sm xl:text-xl    ">{championFiltrado.title}</h1>
+            <h1 className="text-justify text-md lg:text-xl xl:text-2xl     ">{championFiltrado.title}</h1>
           </div>
         </div>
 
