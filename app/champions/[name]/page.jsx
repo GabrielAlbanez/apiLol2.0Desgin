@@ -5,8 +5,9 @@ import Logo from "../../../assets/imgs/icons.webp"
 import CarrouselSkin from "@/app/components/CarrouselSkin"
 
 async function getChampions(championsName) {
+  const apiUrl = process.env.URL;
   const request = await fetch(
-    `http://127.0.0.1:3000/api/champions?${championsName}`,
+    `${apiUrl}/api/champions?${championsName}`,
     {
       method: "GET",
       headers: {

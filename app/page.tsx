@@ -3,8 +3,9 @@ import Link from 'next/link'
 
 
 export default async function Home() {
-
-  const request = await fetch("http://127.0.0.1:3000/api/champions", {
+  
+  const apiUrl = process.env.URL;
+  const request = await fetch(`${apiUrl}/api/champions`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
