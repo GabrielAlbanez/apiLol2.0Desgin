@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default async function Home() {
   
   const port = process.env.PORT || 3000;
-  const request = await fetch(`${process.env.URL}/api/champions`, {
+  const request = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/champions`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

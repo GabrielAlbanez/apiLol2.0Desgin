@@ -1,12 +1,12 @@
 
 // import { url } from "inspector";
 import Image from "next/image";
-import Logo from "../../../assets/imgs/icons.webp"
+import Logo from "@/assets/imgs/icons.webp"
 import CarrouselSkin from "@/app/components/CarrouselSkin"
 
 async function getChampions(championsName) {
   const request = await fetch(
-    `${process.env.URL}/api/champions?${championsName}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/champions?${championsName}`,
     {
       method: "GET",
       headers: {
