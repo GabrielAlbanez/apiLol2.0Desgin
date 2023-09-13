@@ -6,7 +6,7 @@ import CarrouselSkin from "@/app/components/CarrouselSkin"
 
 async function getChampions(championsName) {
   const request = await fetch(
-    `http://10.112.240.187:3000/api/champions?${championsName}`,
+    `http://127.0.0.1:3000/api/champions?${championsName}`,
     {
       method: "GET",
       headers: {
