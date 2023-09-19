@@ -6,7 +6,7 @@ export const runtime = "edge";
 
 async function getChampions(championsName) {
   const request = await fetch(
-    `${process.env.NEXT_PUBLIC_APP_URL}/api/champions?${championsName}`,
+    `https://server-api-lol.vercel.app/api/champions?${championsName}`,
     {
       method: "GET",
       headers: {

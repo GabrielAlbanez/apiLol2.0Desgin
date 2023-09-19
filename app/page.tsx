@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default async function Home() {
   
   const port = process.env.PORT || 3000;
-  const request = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/champions`, {
+  const request = await fetch(`https://server-api-lol.vercel.app/api/champions`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
